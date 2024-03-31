@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> our team </title>
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="iconS.png">
+</head>
+
+<body>
+  <script src="script.js"></script>
+ 
+ 
+  <header>
+   <img class="logo" src="logoW.png">
+  <ul>
+    <li> <a href="index.html">Home</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="videos.html">Videos</a></li>
+    <li><a href="helplines.html">Helplines</a></li>
+  </ul>
+  
+</header>
+
+  <section class="teamTitle">
+    <h2>Our Team</h2>
+    </section>
+  
+  <div class="team1">
+    <img class="team1img" src="team1photo.JPEG">
+    
+    <section class="team1Text">
+    <section class="name"><h3>Janaya Comas</h3>
+      <section class="creator"><h4> Creator </h4>
+    <section class="textp1"><p>Hi! I'm Janaya, one of the creators of <em>Nurture</em>! I've always wanted to create a website where I can help others in any way I can. With Nurture, I wanted to create a safe space for anyone needing a little break from life. I know that handling stress or anxiety is scary, so I wanted to help others who may have the same problems I once had. I hope this project can help you in any way! Unwind at <em>nurture</em>! </p>
+  </div>
+
+
+<div class="team1 reveal">
+    <img class="team2img" src="team2photo.jpg">
+    <section class="team1Text">
+      <section class="name"><h3> Emily Ky</h3>
+        <section class="creator"><h4> Creator </h4>
+      <section class="textp1"><p>Hey everyone! I'm the other creator of Nurture! I love art and design, so I have always been fascinated with web design! Nurture is designed to be a calm area for everyone who needs it!</p> 
+  </div>
+<br> <br> <br> <br> <br> <br> <br> <br> <br>
+
+<footer>
+ <ul class="social_icon">
+   <li><a href="https://www.instagram.com/nurture_urhealth/"><ion-icon name="logo-instagram"></ion-icon></a</li>
+   <li><a href="mailto:nurture.contact0@gmail.com"><ion-icon name="mail-outline"></ion-icon></a</li>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+ </ul>
+  <ul class="menu">
+    <li><a href="team.html">Team</li>
+   <li><a href="#">Special Thanks</li>
+  </ul>
+  <p>&copy;nurture.com | Designed by: Emily Ky & Janaya Comas | All Rights Reserved</p>
+ </footer>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+   <script> 
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+  </body>
+    

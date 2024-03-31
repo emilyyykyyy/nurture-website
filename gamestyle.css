@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+  width: 100%;
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+  scroll-behavior: smooth;
+ }
+
+body {
+  min-height:100vh;
+  overflow-x: hidden;
+ background:linear-gradient(#3a797e); 
+  background-color: #86bbb2;
+}
+
+h2 {
+  font-size: 50px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.wholeGame {
+  padding-top: 20px;
+}
+#game {
+  text-align: center;
+  display:fixed;
+}
+
+#gameBoard {
+  border: 3px #3a797e solid;
+}
+
+#scoreText {
+  font-family: "roboto";
+  font-size: 25px;
+}
+
+#resetBtn {
+  font-family: "roboto";
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  background: white;
+  color:#3a797e;
+  display: incline-block;
+}
+.gameCenter{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding-top:0px;
+  padding-bottom: 10px;
+}
+
+.btnGame {
+  font-family:'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 40px;
+  background: white;
+  display: incline-block;
+  margin-right: 25px;
+}
+
+.btnGame a {
+  text-decoration: none;
+  color: #3a797e;
+  border-radius: 20px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>nurture</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <title> nurture </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="iconS.png">
+</head>
+
+<body>
+  <script src="script.js"></script>
+<header>
+  <img class="logo" src="logoW.png">
+  <ul>
+    <li> <a href= "home.html" class= "active">Home</a></li>
+    <li><a href="games.html">Games</a></li>
+    <li><a href="music.html">Music</a></li>
+    <li><a href="videos.html">Videos</a></li>
+    <li><a href="helplines">Helplines</a></li>
+  </ul>
+</header>
+<section>
+  <img src="STARSFINAL.png" id="stars">
+  <img src="bg.forestFINAL.png" id="forest">
+  <h2 id="text">Nurture</h2>
+  <a href="#sec" id="btn">Explore</a>
+</section>
+<div class="sec" id="sec">
+    <h2>About Us</h2>
+    <p> Have a <em>fresh start</em> with Nurture! <br> Games, music, and videos are all available for all to have a safe space to unwind ♡<br><br>
+      Our team at Nurture strives to help others overcome their stress, anxiety, and overwhelming circumstances. This site is dedicated to being a resource that users can come back to again and again when they're in need. We hope to be included in your journey of self-development.
+    </p>
+    <br><br><br>
+    <h2>♡ Helplines ♡</h2>
+    <p> It is always okay to reach out for help when you need it. You are not alone! Here are some amazing support and resources to better help you. <br><br></p>
+     <p><li> <em>Crisis Text Line:</em>
+Text HOME to 741741 </li><br>
+  <li><em> National Alliance on Mental Illness Helpline:</em> 1-800-950-NAMI</li><br>
+  <li><em>National Domestic Violence Hotline:</em>
+(800) 799-7233
+</li>
+  <br>
+<li><em>National Suicide Prevention Lifeline:</em> Use your preferred relay service or dial 711 then 988
+  <li><em>Abuse and Mental Health Services Administration National Helpline:</em>
+(800) 662-4357</li><br>
+  <li> <em>Online Counceling Options:</em> Better & ReGain</li><br>
+  <li> <em>Therapist Locator:</em> APA Psychologist Locator</li><br></p>
+ </section>
+    
+    
+
+    <iframe width="0" height="0" src="10 MINUTES OF PIANO RELAXING MUSIC WITH RAIN.mp3" frameborder="0" allowfullscreen></iframe>
+
+ 
+  
+  </div>
+
+  <script>
+    let stars = document.getElementById('stars');
+    let forest = document.getElementById('forest');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let header = document.querySelector('header');
+
+   
+    window.addEventListener('scroll', function(){
+      let value = window.scrollY;
+      stars.style.left = value * 0.25 + 'px';
+      forest.style.top = value * 0 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      header.style.top = value * 0.5 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      
+    })
+  </script>
+  
+</body>
+ 
+  
+</html>
